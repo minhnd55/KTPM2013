@@ -36,10 +36,10 @@ def handlingDocstring(docstring):
     for i in listString:
     	if len(i)==2:
     		if i[0][1]>=i[1][0]:
-    			raise "wrong input"
+    			raise Exception("wrong input")
        	if len(i)==3:
          	if i[0][1]>=i[1][0] or i[1][1]>=i[2][0]:
-         		raise "wrong input"
+         		raise Exception("wrong input")
     for i in listString:
         for j in i:
             j[0] = (j[0]+j[1])/2
